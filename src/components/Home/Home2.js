@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/photo.jpg";
 
-
 function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
@@ -22,37 +21,34 @@ function Home2() {
               <i>
                 <b className="purple"> Python, C++, and JavaScript </b>
               </i>
-              along with expertise in modern web technologies like
+              with expertise in modern web technologies such as
               <i>
-                <b className="purple"> React.js, SQL, and CSS.</b>
+                <b className="purple"> React.js and Next.js.</b>
               </i>
               <br />
-              <br />
-              My areas of interest include creating
-              <i>
-                <b className="purple"> AI-powered solutions</b> and
-                <b className="purple"> community-focused platforms</b>.
-              </i>
-              <br />
-              <br />
-              Some of my recent experiences include working as a
-              <b className="purple"> Web Developer at Girl Up Coders</b>, where
-              I am contributing to study-tracking platforms, and as an
+              <br />I have worked as a
+              <b className="purple"> Web Developer at Girl Up Coders</b>,
+              contributing to a study-tracking platform, and as an
               <b className="purple"> ML Intern at Edunet Foundation</b>, where I
               developed a plant disease detection model using deep learning.
               <br />
               <br />
-              Whenever possible, I channel my enthusiasm into developing
-              projects like
-              <i>
-                <b className="purple"> VendoSync</b> (a voice-first inventory
-                platform),
-                <b className="purple"> Swasthya Sathi AI</b> (an AI-powered
-                medical assistant), and{" "}
-                <b className="purple"> Samvidhaan Decoded</b> (a gamified
-                learning platform for the Indian Constitution).
-              </i>
+              Beyond internships, I channel my enthusiasm into projects like:
               <br />
+              <ul>
+                <li>
+                  <b className="purple">VendoSync</b> : Voice-first inventory
+                  management platform
+                </li>
+                <li>
+                  <b className="purple">Swasthya Sathi AI</b> : AI-powered
+                  medical assistant
+                </li>
+                <li>
+                  <b className="purple">Samvidhaan Decoded</b> : Gamified
+                  learning platform for the Indian Constitution
+                </li>
+              </ul>
               <br />
               Recognized as a<b className="purple">
                 {" "}
@@ -74,7 +70,6 @@ function Home2() {
             </div>
           </Col>
         </Row>
-        
       </Container>
     </Container>
   );
