@@ -211,7 +211,7 @@ button:focus {
 .wave {
   animation-name: wave-animation;
   animation-duration: 2.1s;
-  animation-iteration-count: infinite; 
+  animation-iteration-count: infinite;
   transform-origin: 70% 70%;
   display: inline-block;
 }
@@ -295,7 +295,6 @@ button:focus {
 }
 .Typewriter__cursor {
   display: none;
-  
 }
 
 @media (max-width: 767px) {
@@ -315,7 +314,6 @@ button:focus {
   align-items: center;
   height: 100vh;
 }
-
 
 @media (max-width: 767px) {
   .myAvtar {
@@ -374,54 +372,6 @@ button:focus {
   padding-inline-start: 0 !important;
 }
 
-.home-social-icons {
-  position: relative !important;
-  display: inline-block !important;
-  width: 40px !important;
-  height: 40px !important;
-  text-align: center !important;
-  font-size: 1.2em !important;
-  line-height: 2em !important;
-  background: rgba(255, 255, 255, 0.972) !important;
-  border-radius: 50% !important;
-  transition: 0.5s !important;
-}
-
-.home-social-icons::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: #68187a;
-  transition: 0.5s;
-  transform: scale(0.9);
-  z-index: -1;
-}
-
-.home-social-icons:hover::before {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
-}
-
-.home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
-}
-
-.social-icons {
-  display: inline-block !important;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.icon-colour {
-  color: #700c86 !important;
-}
-
 /* --------- */
 /* Footer */
 /* --------- */
@@ -438,6 +388,12 @@ button:focus {
 .footer-body {
   z-index: 1;
   text-align: center !important;
+}
+
+.social-icons {
+  display: inline-block !important;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 @media (max-width: 767px) {
@@ -586,6 +542,7 @@ button:focus {
     padding-top: 0 !important;
   }
 }
+
 /* --------- */
 /* Resume */
 /* --------- */
@@ -673,3 +630,194 @@ button:focus {
   border: 2px solid #8a49a8;
 }
 
+/* ------------
+Contact Section
+--------------- */
+
+.contact {
+  position: relative;
+  z-index: 1;
+  background-image: url("./Assets/homepage_bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #CB30E0;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: #d9b3e6;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #5a2d70;
+  border-radius: 8px;
+  background-color: #2a003f;
+  color: #f2e6ff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+  border-color: #CB30E0;
+  outline: none;
+  background-color: #1a002b;
+}
+
+.contact form button {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #CB30E0;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(203, 48, 224, 0.4);
+}
+
+.contact form button:hover {
+  background: #a125b5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(203, 48, 224, 0.6);
+}
+
+.contact img {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(203, 48, 224, 0.5);
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .contact img {
+    margin-bottom: 30px;
+  }
+}
+
+/*-------------
+Social Sidebar
+---------------*/
+
+.social-sidebar {
+  position: fixed;
+  bottom: 5%;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 1000;
+}
+
+.social-icon {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: linear-gradient(135deg, #cb30e0, #6a0dad);
+
+  color: white;
+  font-size: 26px;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 12px rgba(203, 48, 224, 0.4);
+}
+
+.social-icon:hover {
+  transform: scale(1.15) rotate(10deg);
+  box-shadow: 0px 6px 20px rgba(203, 48, 224, 0.8);
+}
+
+/* -----------
+Thank You Page
+-------------*/
+
+.thankyou-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(circle at top, #2a003f, #0f001f);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.thankyou-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(203, 48, 224, 0.4);
+  backdrop-filter: blur(8px);
+  text-align: center;
+  animation: fadeIn 0.8s ease;
+}
+
+.thankyou-icon {
+  font-size: 60px;
+  color: #cb30e0;
+  margin-bottom: 20px;
+}
+
+.thankyou-card h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.thankyou-card p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #ddd;
+}
+
+.back-btn {
+  padding: 12px 25px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #cb30e0, #6a0dad);
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 15px rgba(203, 48, 224, 0.5);
+}
+
+.back-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 25px rgba(203, 48, 224, 0.9);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
