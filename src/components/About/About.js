@@ -7,6 +7,7 @@ import laptopImg from "../../Assets/about_page_logo.png";
 import Toolstack from "./Toolstack";
 import GitHub from "./Github";
 import GitHubStats from "./GithubStats";
+import AchievementsSection from "./AchievementsSection";
 
 function About() {
   return (
@@ -18,7 +19,6 @@ function About() {
             md={7}
             style={{
               justifyContent: "center",
-              paddingTop: "30px",
               paddingBottom: "50px",
             }}
           >
@@ -33,6 +33,14 @@ function About() {
             className="about-img"
           >
             <img src={laptopImg} alt="about" className="img-fluid" />
+          </Col>
+        </Row>
+        <h1 className="project-heading">
+          My <strong className="purple">Achievements </strong>
+        </h1>
+        <Row>
+          <Col md={12}>
+            <AchievementsSection />
           </Col>
         </Row>
         <h1 className="project-heading">
