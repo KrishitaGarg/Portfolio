@@ -4,47 +4,64 @@ import { ImPointRight } from "react-icons/im";
 
 function AboutCard() {
   return (
-    <Card className="quote-card-view">
+    <Card
+      className="quote-card-view shadow-sm border-0"
+      style={{ borderRadius: "16px" }}
+    >
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Krishita Garg </span>
-            from <span className="purple">New Delhi, India</span>.
-            <br />I am currently working as a{" "}
-            <b className="purple">Web Developer at Girl Up Coders</b>, where I
-            contribute to building community-focused platforms.
-            <br />I also worked as an{" "}
-            <b className="purple">ML Intern at Edunet Foundation</b>, developing
-            plant disease detection models to support sustainable agriculture.
+          <p
+            style={{
+              textAlign: "justify",
+              fontSize: "1.05rem",
+              lineHeight: "1.8",
+              color: "white",
+            }}
+          >
+            Hi, I’m <span className="purple fw-bold">Krishita Garg</span> from{" "}
+            <span className="purple fw-bold">New Delhi, India</span>.
             <br />
-            <br />I am a{" "}
+            I’m a <b className="purple">Web Developer</b> at Girl Up Coders,
+            passionate about creating scalable, impactful solutions. Previously,
+            I worked as an <b className="purple">ML Intern</b> at Edunet
+            Foundation, building AI models for sustainable agriculture.
+            <br />
+            <br />
+            As a{" "}
             <b className="purple">
-              Women Engineers Scholar (Cohort 6, Google & TalentSprint)
-            </b>
-            and <b className="purple">Amazon ML Summer School Mentee</b>,
-            passionate about creating impactful products with Web Technologies
-            and AI.
+              Women Engineers Scholar (Google & TalentSprint)
+            </b>{" "}
+            and <b className="purple">Amazon ML Summer School Mentee</b>, I
+            enjoy solving complex problems at the intersection of{" "}
+            <b>Web Development</b> and <b>AI</b>.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do:
+            Beyond tech, I’m deeply involved in:{" "}
           </p>
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Participating in Hackathons & Ideathons
+          
+          <ul className="list-unstyled ps-0" style={{fontSize: "1.05rem", lineHeight: "1.8"}}>
+            <li className="about-activity mb-2">
+              <ImPointRight className="me-2 purple" />
+              Hackathons & Ideathons
             </li>
-            <li className="about-activity">
-              <ImPointRight /> Exploring AI & Tech Innovations
+            <li className="about-activity mb-2">
+              <ImPointRight className="me-2 purple" />
+              AI Research & Innovation
+            </li>
+            <li className="about-activity mb-2">
+              <ImPointRight className="me-2 purple" />
+              Mentorship & Public Speaking
             </li>
           </ul>
 
-          <br />
-
-          <p style={{ color: "rgb(155 126 172)" }}>
+          <p
+          className="purple"
+            style={{ marginTop: "20px", fontStyle: "italic" }}
+          >
             "Building technology that empowers communities
             <br />
             and creates real impact!"{" "}
           </p>
-          <footer className="blockquote-footer">Krishita Garg</footer>
         </blockquote>
       </Card.Body>
     </Card>
