@@ -12,6 +12,7 @@ export default function GitHubStats() {
           src={`https://github-readme-stats.vercel.app/api?username=${username}&show_icons=true&theme=radical`}
           alt="GitHub Stats"
           className="svg-card"
+          onError={(e) => (e.target.parentNode.style.display = "none")}
         />
       </div>
 
