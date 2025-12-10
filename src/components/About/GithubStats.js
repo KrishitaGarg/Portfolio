@@ -21,6 +21,7 @@ export default function GitHubStats() {
           src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${username}&layout=compact&theme=radical`}
           alt="Top Languages"
           className="svg-card"
+          onError={(e) => (e.target.parentNode.style.display = "none")}
         />
       </div>
     </div>

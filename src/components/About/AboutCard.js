@@ -21,7 +21,7 @@ function AboutCard() {
             Hi, I’m <span className="purple fw-bold">Krishita Garg</span> from{" "}
             <span className="purple fw-bold">New Delhi, India</span>.
             <br />
-            I’m a <b className="purple">Web Developer</b> at Girl Up Coders,
+            I’m a <b className="purple">Web Developer</b>,
             passionate about creating scalable, impactful solutions. Previously,
             I worked as an <b className="purple">ML Intern</b> at Edunet
             Foundation, building AI models for sustainable agriculture.

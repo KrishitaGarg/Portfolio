@@ -27,8 +27,8 @@ function Home2() {
               </i>
               <br />
               <br />I have worked as a
-              <b className="purple"> Web Developer at Girl Up Coders</b>,
-              contributing to a study-tracking platform, and as an
+              <b className="purple"> Frontend Developer Intern at Vayumandal Innovations</b>,
+              contributing to the development of their web platform, and as an
               <b className="purple"> ML Intern at Edunet Foundation</b>, where I
               developed a plant disease detection model using deep learning.
               <br />
