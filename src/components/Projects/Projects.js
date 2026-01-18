@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import SSAI from "../../Assets/Projects/SSAI.png";
 import SD from "../../Assets/Projects/SD.png";
 import WS from "../../Assets/Projects/WS.png";
+import BG from "../../Assets/Projects/BG-AI.png";
 
 function Projects() {
   return (
@@ -18,6 +19,18 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={BG}
+              title="BrandGuard AI"
+              description="BrandGuard AI is a project that demonstrates an Adobe Express Add-on that leverages advanced AI technology to help users create brand-consistent content effortlessly. By integrating AI-driven design suggestions and brand guidelines, BrandGuard AI aims to ensure every creation aligns with the user's brand identity."
+              ghLink="https://github.com/KrishitaGarg/BrandGuard-AI-Add-on"
+              demoLink="https://brand-guard-ai-website.vercel.app/"
+            />
+          </Col>
+
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={SSAI}
